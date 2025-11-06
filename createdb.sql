@@ -1,8 +1,15 @@
 DROP TABLE IF EXISTS item CASCADE;
+DROP TABLE IF EXISTS customer CASCADE;
 
 CREATE TABLE item (
     id INTEGER PRIMARY KEY,
     name TEXT NOT NULL,
     price NUMERIC(5,2) NOT NULL CHECK (price >= 0),
     seller TEXT NOT NULL
+);
+
+CREATE TABLE customer (
+	id Integer PRIMARY KEY, 
+	name TEXT NOT NULL,
+	postcode TEXT NOT NULL
 );
