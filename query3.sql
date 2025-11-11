@@ -1,3 +1,4 @@
+CREATE OR REPLACE VIEW query3 AS
 SELECT
 	i.name AS item_name,
 	MAX(r.date_time) AS most_recent_rating,
