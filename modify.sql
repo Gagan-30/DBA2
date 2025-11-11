@@ -1,0 +1,2 @@
+ALTER TABLE rating
+ALTER COLUMN user_id DROP NOT NULL;
